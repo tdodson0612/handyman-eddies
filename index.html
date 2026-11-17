@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Handyman Eddie's | Carpentry & Home Remodeling</title>
+  <meta name="description" content="Handyman Eddie's — licensed, owner-operated carpentry, repairs and home remodeling. Honest work at $90/hour.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a href="#top" class="logo" aria-label="Handyman Eddie's home">
+        <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <rect x="2" y="2" width="36" height="36" rx="8" fill="currentColor"/>
+          <path d="M12 28 L22 18 M20 12 l8 8 -4 4 -8 -8 z" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Handyman <strong>Eddie's</strong></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#work">Our Work</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact" class="btn btn-small">Free Estimate</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <p class="eyebrow">Carpentry · Repairs · Remodeling</p>
+          <h1>Quality craftsmanship for the home you love.</h1>
+          <p class="lead">From a squeaky door to a full kitchen remodel, Eddie shows up on time, does the job right, and leaves your home cleaner than he found it.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn">Get a Free Estimate</a>
+            <a href="tel:+15555555555" class="btn btn-outline">Call (555) 555-5555</a>
+          </div>
+          <ul class="trust-list">
+            <li>✔ Licensed &amp; Insured</li>
+            <li>✔ Owner-Operated</li>
+            <li>✔ Upfront Pricing</li>
+          </ul>
+        </div>
+        <div class="hero-card reveal">
+          <p class="rate-label">Simple, honest pricing</p>
+          <p class="rate"><span class="currency">$</span>90<span class="per">/hour</span></p>
+          <p class="rate-note">No hidden fees. Free estimates on every project.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">What we do</p>
+          <h2>Services</h2>
+          <p>One call handles it all, big or small.</p>
+        </div>
+        <div class="grid services-grid">
+          <article class="card reveal">
+            <div class="icon">🪚</div>
+            <h3>Custom Carpentry</h3>
+            <p>Built-in shelves, cabinetry, trim, crown molding, wainscoting and custom woodwork made to fit your space.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon">🏠</div>
+            <h3>Home Remodeling</h3>
+            <p>Kitchens, bathrooms, basements and full-room makeovers, managed from the first sketch to the final walkthrough.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon">🔧</div>
+            <h3>Repairs &amp; Maintenance</h3>
+            <p>Doors, drywall, fixtures, leaks and everything on your honey-do list, fixed right the first time.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon">🌲</div>
+            <h3>Decks &amp; Outdoor</h3>
+            <p>Deck building and repair, fences, pergolas and porch work that stands up to the weather.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon">🚪</div>
+            <h3>Doors &amp; Windows</h3>
+            <p>Installation, replacement and adjustment of interior and exterior doors and window trim.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon">🧱</div>
+            <h3>Flooring &amp; Tile</h3>
+            <p>Hardwood, laminate, vinyl plank and tile installation with clean, precise finishes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRICING + ESTIMATOR ===== -->
+    <section id="pricing" class="section section-alt">
+      <div class="container pricing-wrap">
+        <div class="reveal">
+          <p class="eyebrow">Pricing</p>
+          <h2>Straightforward rates</h2>
+          <p>You pay for the time it takes, nothing more. Materials are billed at cost with receipts provided.</p>
+          <ul class="check-list">
+            <li><strong>$90/hour</strong> labor rate</li>
+            <li>Free on-site estimates</li>
+            <li>Materials at cost, no markup surprises</li>
+            <li>Written quote before any large project begins</li>
+          </ul>
+        </div>
+
+        <div class="estimator card reveal" aria-labelledby="estimator-title">
+          <h3 id="estimator-title">Quick Labor Estimator</h3>
+          <label for="hours">Estimated hours: <output id="hours-out">4</output></label>
+          <input type="range" id="hours" min="1" max="80" value="4">
+          <div class="estimate-total">
+            <span>Estimated labor</span>
+            <strong id="estimate-total">$360</strong>
+          </div>
+          <p class="fine-print">Ballpark only. Contact Eddie for an exact quote.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OUR WORK ===== -->
+    <section id="work" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Portfolio</p>
+          <h2>Recent Projects</h2>
+          <p>A few examples of the work we're proud of.</p>
+        </div>
+        <div class="filters reveal" role="group" aria-label="Filter projects">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="carpentry">Carpentry</button>
+          <button class="filter" data-filter="remodel">Remodeling</button>
+          <button class="filter" data-filter="outdoor">Outdoor</button>
+        </div>
+        <!-- Replace each .project-img div with <img src="images/your-photo.jpg" alt="..."> when you have photos -->
+        <div class="grid work-grid">
+          <figure class="project reveal" data-category="remodel">
+            <div class="project-img img-1"></div>
+            <figcaption><h3>Kitchen Remodel</h3><p>New cabinets, counters &amp; lighting</p></figcaption>
+          </figure>
+          <figure class="project reveal" data-category="carpentry">
+            <div class="project-img img-2"></div>
+            <figcaption><h3>Built-In Bookshelves</h3><p>Custom oak library wall</p></figcaption>
+          </figure>
+          <figure class="project reveal" data-category="outdoor">
+            <div class="project-img img-3"></div>
+            <figcaption><h3>Backyard Deck</h3><p>400 sq ft cedar deck</p></figcaption>
+          </figure>
+          <figure class="project reveal" data-category="remodel">
+            <div class="project-img img-4"></div>
+            <figcaption><h3>Bathroom Refresh</h3><p>Tile, vanity &amp; fixtures</p></figcaption>
+          </figure>
+          <figure class="project reveal" data-category="carpentry">
+            <div class="project-img img-5"></div>
+            <figcaption><h3>Crown Molding</h3><p>Whole-home trim upgrade</p></figcaption>
+          </figure>
+          <figure class="project reveal" data-category="outdoor">
+            <div class="project-img img-6"></div>
+            <figcaption><h3>Pergola</h3><p>Shaded patio retreat</p></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section section-dark">
+      <div class="container about-wrap">
+        <div class="about-badge reveal">
+          <span class="big-num" data-count="15">0</span><span class="plus">+</span>
+          <p>Years of experience</p>
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">About Eddie</p>
+          <h2>A local tradesman you can trust</h2>
+          <p>Handyman Eddie's is a family-owned business built on a simple idea: treat every home like it's your own. Eddie personally handles every job. No subcontractors, no runaround.</p>
+          <p>Whether it's a quick repair or a months-long remodel, you'll get clear communication, fair pricing and work that lasts.</p>
+          <div class="stats">
+            <div><span class="stat-num" data-count="500">0</span><span>+ Projects</span></div>
+            <div><span class="stat-num" data-count="100">0</span><span>% Satisfaction</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== REVIEWS ===== -->
+    <!-- Replace these sample reviews with real ones from Eddie's customers before publishing. -->
+    <section id="reviews" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Testimonials</p>
+          <h2>What customers say</h2>
+          <p class="placeholder-note">Sample text. Replace with real customer reviews.</p>
+        </div>
+        <div class="slider reveal">
+          <div class="slides">
+            <blockquote class="slide active">
+              <p>"[Customer review goes here. Example: Eddie finished our kitchen on time and on budget.]"</p>
+              <cite>[Customer Name], [Town]</cite>
+            </blockquote>
+            <blockquote class="slide">
+              <p>"[Customer review goes here. Example: Fast, friendly and the work was spotless.]"</p>
+              <cite>[Customer Name], [Town]</cite>
+            </blockquote>
+            <blockquote class="slide">
+              <p>"[Customer review goes here. Example: Our new deck looks amazing.]"</p>
+              <cite>[Customer Name], [Town]</cite>
+            </blockquote>
+          </div>
+          <div class="slider-dots" role="tablist" aria-label="Choose review"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section section-alt">
+      <div class="container contact-wrap">
+        <div class="reveal">
+          <p class="eyebrow">Get in touch</p>
+          <h2>Request a free estimate</h2>
+          <p>Tell us about your project and Eddie will get back to you within one business day.</p>
+          <ul class="contact-info">
+            <li><span>📞</span><a href="tel:+15555555555">(555) 555-5555</a></li>
+            <li><span>✉️</span><a href="mailto:eddie@example.com">eddie@example.com</a></li>
+            <li><span>📍</span>Serving [Your City] &amp; surrounding areas</li>
+            <li><span>🕒</span>Mon–Sat, 7:00 AM – 6:00 PM</li>
+          </ul>
+        </div>
+
+        <form id="contact-form" class="card contact-form reveal" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <small class="error"></small>
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required>
+            <small class="error"></small>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <small class="error"></small>
+          </div>
+          <div class="field">
+            <label for="service">Service needed</label>
+            <select id="service" name="service">
+              <option>Custom Carpentry</option>
+              <option>Home Remodeling</option>
+              <option>Repairs &amp; Maintenance</option>
+              <option>Decks &amp; Outdoor</option>
+              <option>Doors &amp; Windows</option>
+              <option>Flooring &amp; Tile</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Project details</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <small class="error"></small>
+          </div>
+          <button type="submit" class="btn btn-full">Send Request</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Handyman Eddie's. All rights reserved.</p>
+      <p>Licensed &amp; Insured · Carpentry &amp; Remodeling</p>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
